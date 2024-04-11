@@ -109,11 +109,11 @@ res, context, _ = model.chat(
 print(res)
 ```
 
-Please look at [GitHub](https://github.com/OpenBMB/OmniLMM) for more detail about usage.
+Please look at [GitHub](https://github.com/OpenBMB/MiniCPM-V) for more detail about usage.
 
 
 ## MiniCPM-V 1.0 <!-- omit in toc -->
-Please see the info about MiniCPM-V 1.0 [here](./minicpm_v1.md).
+Please see the info about MiniCPM-V 1.0 [here](https://huggingface.co/openbmb/MiniCPM-V).
 
 ## License
 #### Model License
