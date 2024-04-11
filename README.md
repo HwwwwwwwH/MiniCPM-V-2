@@ -35,6 +35,9 @@ pipeline_tag: visual-question-answering
 <details>
 <summary>Click to view results on TextVQA, DocVQA, OCRBench, OpenCompass, MME, MMBench, MMMU, MathVista, LLaVA Bench, Object HalBench. </summary>
 <div align="center">
+<div align="center">
+    <img src=assets/minicpmv-2-benchmark.png width=100% />
+</div>
 
 <table style="margin: 0px auto;">
 <thead>
@@ -279,8 +282,8 @@ We deploy MiniCPM-V 2.0 on end devices. The demo video is the raw screen recordi
 
 <table align="center">
     <p align="center">
-      <img src="assets/gif_cases/station.gif" width=36%/>
-      <img src="assets/gif_cases/english_menu.gif" width=36%/>
+      <img src="assets/station.gif" width=36%/>
+      <img src="assets/english_menu.gif" width=36%/>
     </p>
 </table>
 
