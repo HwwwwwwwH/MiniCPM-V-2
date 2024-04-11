@@ -208,6 +208,14 @@ class MiniCPMV(MiniCPMVPreTrainedModel):
             result_text.append(tokenizer.decode(result).strip())
         return result_text
 
+    def slice_image(self, image):
+        return slice_image(
+            image,
+            self.config.max_slice_nums,
+            self.config.scale_resolution,
+            self.config.patch_size,
+        )
+
     def get_slice_image_placeholder(self, image, tokenizer):
         image_placeholder = (
             tokenizer.im_start
