@@ -29,9 +29,15 @@ pipeline_tag: visual-question-answering
 
 ## Evaluation <!-- omit in toc -->
 
+<div align="center">
+    <img src=assets/minicpmv-2-peformance2.png width=66% />
+</div>
 <details>
 <summary>Click to view results on TextVQA, DocVQA, OCRBench, OpenCompass, MME, MMBench, MMMU, MathVista, LLaVA Bench, Object HalBench. </summary>
 <div align="center">
+<div align="center">
+    <img src=assets/minicpmv-2-benchmark2.png width=100% />
+</div>
 
 <table style="margin: 0px auto;">
 <thead>
