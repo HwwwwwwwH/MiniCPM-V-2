@@ -3,7 +3,7 @@ pipeline_tag: visual-question-answering
 ---
 
 ## MiniCPM-V 2.0
-**MiniCPM-V 2.8B** is an efficient version with promising performance for deployment. The model is built based on SigLip-400M and [MiniCPM-2.4B](https://github.com/OpenBMB/MiniCPM/), connected by a perceiver resampler. Our latest version, **MiniCPM-V 2.0** has several notable features. 
+**MiniCPM-V 2.8B** is a strong multimodal large language model for efficient end-side deployment. The model is built based on SigLip-400M and [MiniCPM-2.4B](https://github.com/OpenBMB/MiniCPM/), connected by a perceiver resampler. Our latest version, **MiniCPM-V 2.0** has several notable features. 
 
 - 🔥 **State-of-the-art Performance.** 
 
