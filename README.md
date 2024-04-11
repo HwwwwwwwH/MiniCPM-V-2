@@ -32,243 +32,11 @@ pipeline_tag: visual-question-answering
 <div align="center">
     <img src=/openbmb/MiniCPM-V-2.0/resolve/main/assets/minicpmv-2-peformance2.png width=100% />
 </div>
-<details>
-<summary>Click to view results on TextVQA, DocVQA, OCRBench, OpenCompass, MME, MMBench, MMMU, MathVista, LLaVA Bench, Object HalBench. </summary>
+Results on TextVQA, DocVQA, OCRBench, OpenCompass, MME, MMBench, MMMU, MathVista, LLaVA Bench, Object HalBench.
 <div align="center">
-<div align="center">
-    <img src=/openbmb/MiniCPM-V-2.0/resolve/main/assets/minicpmv-2-benchmark2.png width=140% />
+    <img src=/openbmb/MiniCPM-V-2.0/resolve/main/assets/minicpmv-2-benchmark.png width=140% />
 </div>
 
-<table style="margin: 0px auto;">
-<thead>
-  <tr>
-    <th align="left">Model</th>
-    <th>Size</th>
-    <th>TextVQA val</th>
-    <th>DocVQA test</th>
-    <th>OCRBench</th>
-    <th>OpenCompass</th>
-    <th nowrap="nowrap" >MME</th>
-    <th>MMB dev(en)</th>
-    <th>MMB dev(zh)</th>
-    <th>MMMU val</th>
-    <th>MathVista</th>
-    <th>LLaVA Bench</th>
-    <th nowrap="nowrap">Object HalBench</th>
-  </tr>
-</thead>
-<tbody align="center">
-  <tr>
-    <td colspan="12" align="left"><strong>Proprietary models</strong></td>
-  </tr>
-  <tr>
-    <td nowrap="nowrap" align="left">Gemini Pro Vision</td>
-    <td>- </td>
-    <td>74.6</td>
-    <td>88.1</td>
-    <td>680</td>
-    <td>63.8</td>
-    <td>2148.9</td>
-    <td>75.2</td>
-    <td>74.0</td>
-    <td>48.9</td>
-    <td>45.8</td>
-    <td>79.9</td>
-    <td>- </td>
-  </tr>
-  <tr>
-    <td nowrap="nowrap" align="left">GPT-4V</td>
-    <td>- </td>
-    <td>78.0</td>
-    <td>88.4</td>
-    <td>645</td>
-    <td>63.2</td>
-    <td>1771.5</td>
-    <td>75.1</td>
-    <td>75.0</td>
-    <td>53.8</td>
-    <td>47.8</td>
-    <td>93.1</td>
-    <td>86.4 / 92.7</td>
-  </tr>
-  <tr>
-    <td colspan="12" align="left"><strong>Open-source models 6B~34B</strong></td>
-  </tr>
-  <tr>
-    <td  nowrap="nowrap" align="left" >Yi-VL-6B</td>
-    <td align="right" >6.7B</td>
-    <td>45.5*</td>
-    <td>17.1*</td>
-    <td>290</td>
-    <td>49.3</td>
-    <td>1915.1 </td>
-    <td>68.6 </td>
-    <td>68.3 </td>
-    <td>40.3 </td>
-    <td>28.8 </td>
-    <td>51.9 </td>
-    <td>- </td>
-  </tr>
-  <tr>
-    <td  nowrap="nowrap" align="left" >Qwen-VL-Chat</td>
-    <td align="right" >9.6B</td>
-    <td>61.5</td>
-    <td>62.6</td>
-    <td>488 </td>
-    <td>52.1 </td>
-    <td>1860.0 </td>
-    <td>60.6 </td>
-    <td>56.7 </td>
-    <td>37.0 </td>
-    <td>33.8 </td>
-    <td>67.7 </td>
-    <td>56.2 / 80.0</td>
-  </tr>
-  <tr>
-    <td nowrap="nowrap" align="left" >Yi-VL-34B</td>
-    <td align="right" >34B</td>
-    <td>43.4*</td>
-    <td>16.9*</td>
-    <td>290</td>
-    <td>52.6 </td>
-    <td>2050.2</td>
-    <td>71.1</td>
-    <td>71.4</td>
-    <td>45.1</td>
-    <td>30.7</td>
-    <td>62.3</td>
-    <td>- </td>
-  </tr>
-  <tr>
-    <td  nowrap="nowrap" align="left" >DeepSeek-VL-7B</td>
-    <td align="right" >7.3B</td>
-    <td>64.7*</td>
-    <td>47.0* </td>
-    <td>435</td>
-    <td>55.6 </td>
-    <td>1765.4 </td>
-    <td>74.1 </td>
-    <td>72.8 </td>
-    <td>38.3 </td>
-    <td>36.8</td>
-    <td>77.8 </td>
-    <td>- </td>
-  </tr>
-  <tr>
-    <td  nowrap="nowrap" align="left" >TextMonkey</td>
-    <td align="right" >9.7B</td>
-    <td>64.3</td>
-    <td>66.7 </td>
-    <td>558</td>
-    <td>- </td>
-    <td>- </td>
-    <td>- </td>
-    <td>- </td>
-    <td>- </td>
-    <td>-</td>
-    <td>- </td>
-    <td>- </td>
-  </tr>
-    <tr>
-    <td  nowrap="nowrap" align="left" >CogVLM-Chat</td>
-    <td align="right" >17.4B</td>
-    <td>70.4</td>
-    <td>33.3*</td>
-    <td>590 </td>
-    <td>52.5 </td>
-    <td>1736.6 </td>
-    <td>63.7 </td>
-    <td>53.8 </td>
-    <td>37.3 </td>
-    <td>34.7 </td>
-    <td>73.9 </td>
-    <td>73.6 / 87.4 </td>
-  </tr>
-  <tr>
-    <td colspan="12" align="left"><strong>Open-source models 1B~3B </strong></td>
-  </tr>
-  <tr>
-    <td  nowrap="nowrap" align="left" >DeepSeek-VL-1.3B</td>
-    <td align="right" >1.7B</td>
-    <td>58.4*</td>
-    <td>37.9*</td>
-    <td>413</td>
-    <td>46.0 </td>
-    <td>1531.6 </td>
-    <td>64.0 </td>
-    <td>61.2 </td>
-    <td>33.8 </td>
-    <td>29.4 </td>
-    <td>51.1 </td>
-    <td>- </td>
-  </tr>
-  <tr>
-    <td  nowrap="nowrap" align="left" >MobileVLM V2</td>
-    <td align="right" >3.1B</td>
-    <td>57.5</td>
-    <td>19.4*</td>
-    <td>-</td>
-    <td>-</td>
-    <td>1440.5(P) </td>
-    <td>63.2 </td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td  nowrap="nowrap" align="left" >Mini-Gemini</td>
-    <td align="right" >2.2B</td>
-    <td>56.2</td>
-    <td>34.2*</td>
-    <td>-</td>
-    <td>-</td>
-    <td>1653.0 </td>
-    <td>59.8 </td>
-    <td>- </td>
-    <td>31.7 </td>
-    <td>-</td>
-    <td>- </td>
-    <td>- </td>
-  </tr>
-  <tr>
-    <td  nowrap="nowrap" align="left" >MiniCPM-V</td>
-    <td align="right" >2.8B </td>
-    <td>60.6</td>
-    <td>38.2 </td>
-    <td>366</td>
-    <td>47.6</td>
-    <td>1650.2 </td>
-    <td>67.9 </td>
-    <td>65.3 </td>
-    <td><strong>38.3</strong></td>
-    <td>28.9</td>
-    <td>51.3 </td>
-    <td>78.4 / 88.5 </td>
-  </tr>
-  <tr>
-    <td  nowrap="nowrap" align="left" ><strong>MiniCPM-V 2.0</strong></td>
-    <td align="right" >2.8B </td>
-    <td><strong>74.1</strong></td>
-    <td><strong>71.9</strong> </td>
-    <td><strong>605</strong></td>
-    <td><strong>55.0</strong></td>
-    <td><strong>1808.6</strong> </td>
-    <td><strong>69.6</strong> </td>
-    <td><strong>68.1</strong> </td>
-    <td>38.2 </td>
-    <td><strong>38.7</strong></td>
-    <td><strong>69.2</strong> </td>
-    <td><strong>85.5 / 92.2 </strong></td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-* We evaluate the officially released checkpoint by ourselves.
-
-</details>
 
 ## Examples <!-- omit in toc -->
 
@@ -291,10 +59,10 @@ We deploy MiniCPM-V 2.0 on end devices. The demo video is the raw screen recordi
 
 
 ## Demo
-Click here to try out the Demo of [MiniCPM-V-2.0](http://120.92.209.146:80).
+Click here to try out the Demo of [MiniCPM-V 2.0](http://120.92.209.146:80).
 
 ## Deployment on Mobile Phone
-MiniCPM-V-2.0 can be deployed on mobile phones with Android and Harmony operating systems. 🚀 Try it out [here](https://github.com/OpenBMB/mlc-MiniCPM).
+MiniCPM-V 2.0 can be deployed on mobile phones with Android and Harmony operating systems. 🚀 Try it out [here](https://github.com/OpenBMB/mlc-MiniCPM).
 
 
 ## Usage
@@ -323,7 +91,7 @@ model = model.to(device='cuda', dtype=torch.bfloat16)
 # Run with `PYTORCH_ENABLE_MPS_FALLBACK=1 python test.py`
 #model = model.to(device='mps', dtype=torch.float16)
 
-tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V', trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-2.0', trust_remote_code=True)
 model.eval()
 
 image = Image.open('xx.jpg').convert('RGB')
@@ -348,13 +116,12 @@ Please look at [GitHub](https://github.com/OpenBMB/OmniLMM) for more detail abou
 Please see the info about MiniCPM-V 1.0 [here](./minicpm_v1.md).
 
 ## License
-
 #### Model License
 * The code in this repo is released according to [Apache-2.0](https://github.com/OpenBMB/MiniCPM/blob/main/LICENSE)
-* The usage of MiniCPM-V's parameters is subject to ["General Model License Agreement - Source Notes - Publicity Restrictions - Commercial License"](https://github.com/OpenBMB/General-Model-License/blob/main/)
+* The usage of MiniCPM-V 2.0's parameters is subject to ["General Model License Agreement - Source Notes - Publicity Restrictions - Commercial License"](https://github.com/OpenBMB/General-Model-License/blob/main/)
 * The parameters are fully open to acedemic research
 * Please contact cpm@modelbest.cn to obtain a written authorization for commercial uses. Free commercial use is also allowed after registration.
 
 #### Statement
-* As a LLM, MiniCPM-V generates contents by learning a large mount of texts, but it cannot comprehend, express personal opinions or make value judgement. Anything generated by MiniCPM-V does not represent the views and positions of the model developers
+* As a LLM, MiniCPM-V 2.0 generates contents by learning a large mount of texts, but it cannot comprehend, express personal opinions or make value judgement. Anything generated by MiniCPM-V 2.0 does not represent the views and positions of the model developers
 * We will not be liable for any problems arising from the use of the MinCPM-V open Source model, including but not limited to data security issues, risk of public opinion, or any risks and problems arising from the misdirection, misuse, dissemination or misuse of the model.
