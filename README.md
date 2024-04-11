@@ -7,7 +7,7 @@ pipeline_tag: visual-question-answering
 
 - 🔥 **State-of-the-art Performance.** 
 
-  MiniCPM-V 2.0 achieves **state-of-the-art performance** on multiple benchmarks (including OCRBench, TextVQA, MME, MMB, MathVista, etc) among models under 7B parameters. It even **outperforms strong Qwen-VL-Chat 9.6B, CogVLM-Chat 17.4B, and Yi-VL 34B on OpenCompass, a comprehesive evaluation over 11 popular benchmarks**. Notably, MiniCPM-V 2.0 shows **strong OCR capability**, achieving **comparable performance to Gemini Pro in scene-text understanding**, and **state-of-the-art performance on OCRBench** among open-source models.
+  MiniCPM-V 2.0 achieves **state-of-the-art performance** on multiple benchmarks (including OCRBench, TextVQA, MME, MMB, MathVista, etc) among models under 7B parameters. It even **outperforms strong Qwen-VL-Chat 9.6B, CogVLM-Chat 17.4B, and Yi-VL 34B on OpenCompass, a comprehensive evaluation over 11 popular benchmarks**. Notably, MiniCPM-V 2.0 shows **strong OCR capability**, achieving **comparable performance to Gemini Pro in scene-text understanding**, and **state-of-the-art performance on OCRBench** among open-source models.
 
 - 🏆 **Trustworthy Behavior.** 
 
@@ -15,7 +15,7 @@ pipeline_tag: visual-question-answering
 
 - 🌟 **High-Resolution Images at Any Aspect Raito.**
 
-  MiniCPM-V 2.0 can accept **1.8 million pixel (e.g., 1344x1344) images at any aspect ratio**. This enables better perception of fine-grained visual information such as small objects and optical characters, which is achieved via a recent technique from [LLaVA-UHD](https://arxiv.org/pdf/2403.11703.pdf).
+  MiniCPM-V 2.0 can accept **1.8 million pixels (e.g., 1344x1344) images at any aspect ratio**. This enables better perception of fine-grained visual information such as small objects and optical characters, which is achieved via a recent technique from [LLaVA-UHD](https://arxiv.org/pdf/2403.11703.pdf).
 
 - ⚡️ **High Efficiency.** 
 
@@ -25,7 +25,7 @@ pipeline_tag: visual-question-answering
 
 - 🙌 **Bilingual Support.** 
 
-  MiniCPM-V 2.0 **supports strong bilingual multimodal capabilities in both English and Chinese**. This is enabled by generalizing multimodal capabilities across languages, a technique from [VisCPM](https://arxiv.org/abs/2308.12038) [ICLR'24 Spotlight].
+  MiniCPM-V 2.0 **supports strong bilingual multimodal capabilities in both English and Chinese**. This is enabled by generalizing multimodal capabilities across languages, a technique from [VisCPM](https://arxiv.org/abs/2308.12038) [ICLR'24].
 
 ## Evaluation <!-- omit in toc -->
 
@@ -81,7 +81,7 @@ pipeline_tag: visual-question-answering
     <td>- </td>
     <td>78.0</td>
     <td>88.4</td>
-    <td>516</td>
+    <td>645</td>
     <td>63.2</td>
     <td>1771.5</td>
     <td>75.1</td>
