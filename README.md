@@ -82,7 +82,7 @@ import torch
 from PIL import Image
 from transformers import AutoModel, AutoTokenizer
 
-model = AutoModel.from_pretrained('openbmb/MiniCPM-V-2.0', trust_remote_code=True, torch_dtype=torch.bfloat16)
+model = AutoModel.from_pretrained('openbmb/MiniCPM-V-2', trust_remote_code=True, torch_dtype=torch.bfloat16)
 # For Nvidia GPUs support BF16 (like A100, H100, RTX3090)
 model = model.to(device='cuda', dtype=torch.bfloat16)
 # For Nvidia GPUs do NOT support BF16 (like V100, T4, RTX2080)
@@ -91,7 +91,7 @@ model = model.to(device='cuda', dtype=torch.bfloat16)
 # Run with `PYTORCH_ENABLE_MPS_FALLBACK=1 python test.py`
 #model = model.to(device='mps', dtype=torch.float16)
 
-tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-2.0', trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-2', trust_remote_code=True)
 model.eval()
 
 image = Image.open('xx.jpg').convert('RGB')
