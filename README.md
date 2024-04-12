@@ -51,8 +51,8 @@ We deploy MiniCPM-V 2.0 on end devices. The demo video is the raw screen recordi
 <table align="center">
     <p align="center">
       <img src="assets/station.gif" width=40% style="display:inline-block;"/>
-      <img src="assets/english_menu.gif" width=40% style="display:inline-block;"/>
-     </p>
+      <img src="assets/london_car.gif" width=40% style="display:inline-block;"/>
+    </p>
 </table>
 
 
