@@ -209,6 +209,11 @@ class MiniCPMVConfig(MiniCPMConfig):
         patch_size=14,
         max_slice_nums=9,
         scale_resolution=448,
+        im_start_token_id=101,
+        im_end_token_id=102,
+        slice_start_token_id=111,
+        slice_end_token_id=112,
+        unk_token_id=0,
         **kwargs,
     ):
         self.vision_encoder = vision_encoder
@@ -219,4 +224,9 @@ class MiniCPMVConfig(MiniCPMConfig):
         self.patch_size = patch_size
         self.max_slice_nums = max_slice_nums
         self.scale_resolution = scale_resolution
+        self.im_start_token_id = im_start_token_id
+        self.im_end_token_id = im_end_token_id
+        self.slice_start_token_id = slice_start_token_id
+        self.slice_end_token_id = slice_end_token_id
+        self.unk_token_id = unk_token_id
         super().__init__(**kwargs)
