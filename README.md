@@ -139,7 +139,7 @@ Please see the info about MiniCPM-V 1.0 [here](https://huggingface.co/openbmb/Mi
 
 ## Other Multimodal Projects from Our Team
 
-[VisCPM](https://github.com/OpenBMB/VisCPM/tree/main) | [RLHF-V](https://github.com/RLHF-V/RLHF-V) | [LLaVA-UHD](https://github.com/thunlp/LLaVA-UHD) | [Muffin](https://github.com/thunlp/Muffin/tree/main)
+[VisCPM](https://github.com/OpenBMB/VisCPM/tree/main) | [RLHF-V](https://github.com/RLHF-V/RLHF-V) | [LLaVA-UHD](https://github.com/thunlp/LLaVA-UHD)
 
 ## Citation
 
