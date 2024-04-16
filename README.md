@@ -1,5 +1,13 @@
 ---
 pipeline_tag: visual-question-answering
+language:
+- en
+- zh
+datasets:
+- HaoyeZhang/RLHF-V-Dataset
+- Yirany/UniMM-Chat
+- HuggingFaceM4/VQAv2
+- liuhaotian/LLaVA-Instruct-150K
 ---
 
 ## MiniCPM-V 2.0
