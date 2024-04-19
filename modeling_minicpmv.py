@@ -301,6 +301,7 @@ class MiniCPMV(MiniCPMVPreTrainedModel):
         vision_hidden_states=None,
         max_new_tokens=1024,
         sampling=True,
+        max_inp_length=2048,
         **kwargs
     ):
         if isinstance(msgs, str):
@@ -353,7 +354,7 @@ class MiniCPMV(MiniCPMVPreTrainedModel):
         with torch.inference_mode():
             res, vision_hidden_states = self.generate(
                 data_list=[final_input],
-                max_inp_length=8192,
+                max_inp_length=max_inp_length,
                 img_list=[images],
                 tokenizer=tokenizer,
                 max_new_tokens=max_new_tokens,
@@ -362,7 +363,7 @@ class MiniCPMV(MiniCPMVPreTrainedModel):
                 **generation_config
             )
         answer = res[0]
-        context = msgs
+        context = msgs.copy()
         context.append({"role": "assistant", "content": answer})
 
         return answer, context, generation_config
