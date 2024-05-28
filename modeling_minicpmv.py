@@ -66,6 +66,12 @@ class MiniCPMV(MiniCPMVPreTrainedModel):
             ]
         )
 
+    def get_input_embeddings(self):
+        return self.llm.get_input_embeddings()
+
+    def set_input_embeddings(self, value):
+        self.llm.embed_tokens = value
+
     def get_vision_embedding(self, pixel_values):
         res = []
         dtype = self.vpm.pos_embed.data.dtype
