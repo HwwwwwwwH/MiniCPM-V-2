@@ -13,7 +13,7 @@ datasets:
 [GitHub](https://github.com/OpenBMB/MiniCPM-V) | [Demo](https://huggingface.co/spaces/openbmb/MiniCPM-V-2)
 
 ## News <!-- omit in toc -->
-
+* [2024.05.20] 🔥 The GPT-4V level multimodal model [**MiniCPM-Llama3-V 2.5**](https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5) is out.
 * [2024.04.23] MiniCPM-V 2.0 supports [vLLM](#vllm) now!
 * [2024.04.18] We create a HuggingFace Space to host the demo of MiniCPM-V 2.0 at [here](https://huggingface.co/spaces/openbmb/MiniCPM-V-2)!
 * [2024.04.17] MiniCPM-V 2.0 supports deploying [WebUI Demo](https://github.com/OpenBMB/MiniCPM-V/blob/8a1f766b85595a8095651eed9a44a83a965b305b/README_en.md#minicpm-v-) now!
