@@ -319,21 +319,24 @@ class MiniCPMV(MiniCPMVPreTrainedModel):
             content = msg["content"]
             assert role in ["user", "assistant"]
             if i == 0:
-                assert role == "user", "The role of first msg should be user"
-                if self.config.slice_mode:
-                    images, final_placeholder = self.get_slice_image_placeholder(
-                        image, tokenizer
-                    )
-                    content = final_placeholder + "\n" + content
+                if image is None:
+                    images = []
                 else:
-                    images = [image]
-                    content = (
-                        tokenizer.im_start
-                        + tokenizer.unk_token * self.config.query_num
-                        + tokenizer.im_end
-                        + "\n"
-                        + content
-                    )
+                    assert role == "user", "The role of first msg should be user"
+                    if self.config.slice_mode:
+                        images, final_placeholder = self.get_slice_image_placeholder(
+                            image, tokenizer
+                        )
+                        content = final_placeholder + "\n" + content
+                    else:
+                        images = [image]
+                        content = (
+                            tokenizer.im_start
+                            + tokenizer.unk_token * self.config.query_num
+                            + tokenizer.im_end
+                            + "\n"
+                            + content
+                        )
             prompt += "<用户>" if role == "user" else "<AI>"
             prompt += content
         prompt += "<AI>"
