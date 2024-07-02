@@ -79,7 +79,7 @@ We deploy MiniCPM-V 2.0 on end devices. The demo video is the raw screen recordi
 
 
 ## Demo
-Click here to try out the Demo of [MiniCPM-V 2.0](http://120.92.209.146:80).
+Click here to try out the Demo of [MiniCPM-V 2.0](https://huggingface.co/spaces/openbmb/MiniCPM-V-2).
 
 ## Deployment on Mobile Phone
 MiniCPM-V 2.0 can be deployed on mobile phones with Android and Harmony operating systems. 🚀 Try it out [here](https://github.com/OpenBMB/mlc-MiniCPM).
