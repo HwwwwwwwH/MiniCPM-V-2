@@ -139,7 +139,7 @@
   ],
   "auto_map": {
     "AutoTokenizer": [
-      "modeling_minicpmv.LlamaTokenizerWrapper",
+      "tokenization_minicpmv.MiniCPMVTokenizer",
       null
     ]
   },
@@ -152,7 +152,7 @@
   "padding_side": "right",
   "sp_model_kwargs": {},
   "spaces_between_special_tokens": false,
-  "tokenizer_class": "LlamaTokenizerWrapper",
+  "tokenizer_class": "MiniCPMVTokenizer",
   "truncation_side": "right",
   "unk_token": "<unk>",
   "use_default_system_prompt": false
