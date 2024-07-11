@@ -52,6 +52,7 @@ class MiniCPMVBatchFeature(BatchFeature):
                 if not is_tensor(value):
                     tensor = as_tensor(value)
                     return tensor
+                return value
             except:  # noqa E722
                 if key == "overflowing_values":
                     raise ValueError("Unable to create tensor returning overflowing values of different lengths. ")
@@ -71,6 +72,8 @@ class MiniCPMVBatchFeature(BatchFeature):
 
         def cast_tensor(v):
             # check if v is a floating point
+            if v is None:
+                return None
             if torch.is_floating_point(v):
                 # cast and send to device
                 return v.to(*args, **kwargs)
